@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="surveyform.css">
+        <title></title>
+    </head>
+    <body background="images/tetho.jpg">
+<header>
+    Covid-19 healthcare survey Mar-2021
+</header>
+<br>
+<div id="content">
+    <form>
+        <div>
+            <ul>
+            <strong><li>This is a covid-19 healthcare survey form. Please fill the correct details carefully. </li><br>
+            <li>Feel free to ask us any question any time .you can reach out to us at :18000000000</li></strong>
+        </ul>
+            <hr>
+            <br>
+            <br>
+
+        <label for="name"> Name of the individual  :</label>
+          <input type="text" id="username" name="usrname" placeholder="first name"  required>
+          <input type="text" id="username" name="usrname" placeholder="last name" required>
+           <br><br>
+           <label for="email" style="margin-left: 3px;">Email ID: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u> </label>
+           <input type="email" id="email" name="email" placeholder="enter email here" required style="width:330px;margin-left: 15px;">
+           <br><br>
+           <label for="number"> Mobile number:  </label>
+           <input type="number" id="number" placeholder="enter your mobile no." required style="margin-left: 60px;">
+           <br><br>
+Gender :
+           <input type="radio" name="gender" value="male" id="option1" style="margin-left: 110px;">
+           <label for="option1">Male</label>
+
+           <input type="radio" name="gender" value="female" id="option2">
+           <label for="option2">Female</label>
+
+           <input type="radio" name="gender" value="other" id="option3">
+           <label for="option3">Other</label>
+
+           <br><br>
+       Select your age :
+           <input type="radio" name="age" value="0-25" id="option-1"style="margin-left: 50px;">
+           <label for="option-1" >0-25</label>
+
+           <input type="radio" name="age" value="26-50" id="option-2">
+           <label for="option-2" >26-50</label>
+
+           <input type="radio" name="age" value="50+" id="option-3">
+           <label for="option-3" >50+</label>
+           <br><br>
+           <label for ="question">Select city : </label>
+<select name="question" id="question" style="margin-left: 90px;">
+    <option value="q1">Yavatmal</option>
+    <option value="q2">Amravati</option>
+    <option value="q3">Wardha</option>
+    <option value="q4">Akola</option>
+    <option value="q5">Buldana</option>
+    </select>
+    <br><br>
+    <label for="add">Address:</label>
+    <textarea name="add" id="add" cols="40" rows="5" placeholder="enter address here" style="margin-left: 110px;"></textarea>
+<br><br>
+Done with cov-19 vaccination?  :
+<input type="radio" name="reply" value="yes" id="option1">
+           <label for="option1">yes</label>
+
+           <input type="radio" name="reply" value="no" id="option2">
+           <label for="option2">no</label>
+           <br>
+           <br>
+Please check if you have problem mentioned:
+<input type="checkbox" id="problem1" name="problem1" value="cough">
+<label for="problem1"> Cough</label>
+<input type="checkbox" id="problem2" name="problem2" value="cold">
+<label for="problem2"> Cold</label>
+<input type="checkbox" id="problem3" name="problem3" value="fever">
+<label for="problem3"> Fever</label>
+    <input type="checkbox" id="problem4" name="problem4" value="none">
+    <label for="problem4"> None</label>
+<br>
+<br>
+Do you currently have heath insurance coverage? :
+           <input type="radio" name="health" value="yes" id="option1">
+           <label for="option1">yes</label>
+
+           <input type="radio" name="health" value="no" id="option2">
+           <label for="option2">no</label>
+           <br<br>
+           <br><br><hr>
+         <p><input type="checkbox" id="check" name="check" value="yes" required>
+        
+   <label for="check"></label>
+   <strong> I aggree above filled information is correct.</strong></p>  
+    <br>
+    <span>
+    <input type="submit" value="Submit"></span>
+        </div>
+    </form>
+</div>
+
+    </body>
+</html>

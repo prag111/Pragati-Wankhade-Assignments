@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation</title>
+    <link rel="stylesheet" href="technicaldoc.css">
+</head>
+<body>
+    <nav id="navbar">
+        <header>React Guide</header>
+        <ul>
+          <li><a class="nav-link" href="#whatisreact">What is React</a></li>
+           <li>
+            <a class="nav-link" href="#whyreact"
+              >Why React</a>
+          </li>
+          <!-- <li>
+            <a class="nav-link" href="#JavaScript_and_Java">JavaScript and Java</a>
+          </li> -->
+          <li><a class="nav-link" href="#helloworld">Hello world</a></li>
+          <li><a class="nav-link" href="#introducingjsx">Introducing JSX</a></li>
+          <li>
+            <a class="nav-link" href="#renderingelements">Rendering Elements</a>
+          </li>
+          <li><a class="nav-link" href="#componentandprops">Components and Props</a></li>
+          <li><a class="nav-link" href="#stateandlifecycle">State and Lifecycle</a></li>
+          <li><a class="nav-link" href="#conditionalrendering">Conditional rendering</a></li>
+          
+          <li><a class="nav-link" href="#Reference">Reference</a></li> 
+        </ul>
+    </nav>
+    <main id="main-doc">
+    <section class="main-section" id="whatisreact">
+        <header>Introduction</header>
+        <article>
+        <p>
+            React.js is the most popular front-end JavaScript library for building Web applications. React.js or Reactjs or simply React are different ways to represent React.js. Most fortune 500 companies use Reactjs  In this article, we will learn what React.js (or simply React or Reactjs) is and why we should use Reactjs instead of other JavaScript frameworks like Angular. 
+        </p>
+    
+        <p>
+            React.js is an open-source JavaScript library that is used for building user interfaces specifically for single-page applications. It’s used for handling the view layer for web and mobile apps. React also allows us to create reusable UI components. React was first created by Jordan Walke, a software engineer working for Facebook. React first deployed on Facebook’s newsfeed in 2011 and on Instagram.com in 2012.
+ 
+        </p>
+        <ul>
+            <li>
+                React allows developers to create large web applications that can change data, without reloading the page. The main purpose of React is to be fast, scalable, and simple. It works only on user interfaces in the application. This corresponds to the view in the MVC template. It can be used with a combination of other JavaScript libraries or frameworks, such as Angular JS in MVC.
+ 
+                React JS is also called simply to React or React.js.  
+            </li>
+            <li>Some facts about why we use react:
+                <ul>
+                <li>React.js is declarative</li>
+               <li>React.js is simple</li> 
+                <li>React.js is component based</li>
+                <li>React.js supports server side</li>
+                <li>React.js is extensive</li>
+                <li>React.js is fast </li>
+                <li>React.js is easy to learn </li>
+            </ul>
+            </li>
+        </ul>
+        </article>
+    </section>
+    <section class="main-section" id="whyreact">
+        <header>Why React</header>
+        <article>
+        <p>Now, the main question arises in front of us is why one should use React. There are so many open-source platforms for making the front-end web application development easier, like Angular. Let us take a quick look on the benefits of React over other competitive technologies or frameworks. With the front-end world-changing on a daily basis, it’s hard to devote time to learning a new framework – especially when that framework could ultimately become a dead end. So, if you're looking for the next best thing but you're feeling a little bit lost in the framework jungle, I suggest checking out React.
+            </p>
+    
+        <ul>
+            <li>
+                Simplicity:<br>
+ 
+                ReactJS is just simpler to grasp right away. The component-based approach, well-defined lifecycle, and use of just plain JavaScript make React very simple to learn, build a professional web (and mobile applications), and support it. React uses a special syntax called JSX which allows you to mix HTML with JavaScript. This is not a requirement; Developer can still write in plain JavaScript but JSX is much easier to use.
+                 
+            </li>
+            <li>Easy to learn:<br>
+ 
+                Anyone with a basic previous knowledge in programming can easily understand React while Angular and Ember are referred to as ‘Domain-specific Language’, implying that it is difficult to learn them. To react, you just need basic knowledge of CSS and HTML.
+                 </li>
+            <li>
+                 Native Approach:
+ 
+                React can be used to create mobile applications (React Native). And React is a diehard fan of reusability, meaning extensive code reusability is supported. So at the same time, we can make IOS, Android and Web applications.
+                 
+            </li>
+            <li>
+             Data Binding:
+ 
+React uses one-way data binding and an application architecture called Flux controls the flow of data to components through one control point – the dispatcher. It's easier to debug self-contained components of large ReactJS apps.
+            </li>
+            <li>
+                Performance:
+ 
+React does not offer any concept of a built-in container for dependency. You can use Browserify, Require JS, EcmaScript 6 modules which we can use via Babel, ReactJS-di to inject dependencies automatically.
+            </li>
+        </ul>
+        </article>
+    </section>
+   
+    <section class="main-section" id="helloworld">
+        <header>Hello world</header>
+        <article>
+        To get started with writing React, open the Scratchpad and write your
+        first "Hello world" :
+        <code
+            >ReactDOM.render(
+                Hello, world!,
+                document.getElementById('root')
+              );
+        </code>
+    
+        Select the code in the pad and hit Ctrl+R to watch it unfold in your
+        browser!
+        </article>
+    </section>
+    <section class="main-section" id="introducingjsx">
+        <header>Introducing JSX</header>
+        <p>
+            It is called JSX, and it is a syntax extension to JavaScript. We recommend using it with React to describe what the UI should look like. JSX may remind you of a template language, but it comes with the full power of JavaScript.JSX produces React “elements”. We will explore rendering them to the DOM in the next section. Below, you can find the basics of JSX necessary to get you started.
+         </p>
+        <p>
+            React embraces the fact that rendering logic is inherently coupled with other UI logic: how events are handled, how the state changes over time, and how the data is prepared for display.Instead of artificially separating technologies by putting markup and logic in separate files, React separates concerns with loosely coupled units called “components” that contain both. We will come back to components in a further section, but if you’re not yet comfortable putting markup in JS, this talk might convince you otherwise.
+            React doesn’t require using JSX, but most people find it helpful as a visual aid when working with UI inside the JavaScript code. It also allows React to show more useful error and warning messages.
+        </p>
+      
+    </section>
+    <section class="main-section" id="renderingelement">
+        <header>Rendering Elements</header>
+        <article>
+        <p>
+            Unlike browser DOM elements, React elements are plain objects, and are cheap to create. React DOM takes care of updating the DOM to match the React elements.
+            <code>const element =Hello, world;</code>
+        
+        </p>
+        <p>
+            Rendering an element into DOM
+             <code>const element =Hello, world;
+                ReactDOM.render(element, document.getElementById('root'));</code> 
+                Applications built with just React usually have a single root DOM node. If you are integrating React into an existing app, you may have as many isolated root DOM nodes as you like.
+
+                To render a React element into a root DOM node, pass both to ReactDOM.render();
+        </p>
+        <p>
+            Updating rendered element:
+          <code>
+            function tick() {
+                const element = (
+                  <div>
+                    Hello, world!
+                    It is {new Date().toLocaleTimeString()}.
+                  </div>
+                );
+                ReactDOM.render(element, document.getElementById('root'));
+              }
+              
+              setInterval(tick, 1000);
+          </code>
+          React elements are immutable. Once you create an element, you can’t change its children or attributes. An element is like a single frame in a movie: it represents the UI at a certain point in time.
+With our knowledge so far, the only way to update the UI is to create a new element, and pass it to ReactDOM.render().
+        </p>
+        </article>
+    </section>
+    <section class="main-section" id="componentandprops">
+        <header>Component and props</header>
+        <article>
+        <p>
+            Components are independent and reusable bits of code. They serve the same purpose as JavaScript functions, but work in isolation and return HTML via a render() function. Components come in two types, Class components and Function components, in this tutorial we will concentrate on Class components.
+        </p>
+    
+        <p>
+            In some cases, those components need to communicate (send data to each other) and the way to pass data between components is by using props. “Props” is a special keyword in React, which stands for properties and is being used for passing data from one component to another.
+        </p>
+        <p>
+            The simplest way to define a component is to write a JavaScript function:
+        </p>
+        <code>function Welcome(props) {
+            return Hello, {props.name};
+          }</code>
+        <p>
+            This function is a valid React component because it accepts a single “props” (which stands for properties) object argument with data and returns a React element. We call such components “function components” because they are literally JavaScript functions.
+
+            You can also use an ES6 class to define a component:
+        </p>
+    
+        <code>
+        class Welcome extends React.Component {
+            render() {
+              return Hello, {this.props.name};
+            }
+          }
+        </code>
+        </article>
+    </section>
+    <section class="main-section" id="stateandlifecycle">
+        <header>State and Lifecycle</header>
+        <article>
+        <p>
+            In Rendering Elements, we have only learned one way to update the UI. We call ReactDOM.render() to change the rendered output:
+        </p>
+        <code>
+            function tick() {
+                const element = (
+                  <div>
+                    Hello, world!
+                    It is {new Date().toLocaleTimeString()}.
+                  </div>
+                );
+                ReactDOM.render(
+                  element,
+                  document.getElementById('root')
+                );
+              }
+              
+              setInterval(tick, 1000);
+        </code>
+        </article>
+    </section>
+    <section class="main-section" id="conditionalrendering">
+        <header>Conditional Rendering</header>
+        <article>
+        <p>
+            onditional rendering in React works the same way conditions work in JavaScript. Use JavaScript operators like if or the conditional operator to create elements representing the current state, and let React update the UI to match them.
+             Consider these two components:
+        </p>
+    
+        <code>function UserGreeting(props) {
+            return Welcome back!;
+          }
+          
+          function GuestGreeting(props) {
+            return
+             Please sign up.;
+          }</code>
+        <p>
+            We’ll create a Greeting component that displays either of these components depending on whether a user is logged in:
+            <code>
+                function Greeting(props) {
+                    const isLoggedIn = props.isLoggedIn;
+                    if (isLoggedIn) {
+                      return <UserGreeting />;
+                    }
+                    return <GuestGreeting />;
+                  }
+                  
+                  ReactDOM.render(
+                    // Try changing to isLoggedIn={true}:
+                    <Greeting isLoggedIn={false} />,
+                    document.getElementById('root')
+                  );
+            </code>
+        </p>
+    
+       
+        </article>
+    </section>
+   
+    <section class="main-section" id="Reference">
+        <header>Reference</header>
+        <article>
+        <ul>
+            <li>
+            All the documentation in this page is taken from
+            <a
+                href="https://reactjs.org/docs/getting-started.html"
+                target="_blank"
+                >MDN</a
+            >
+            </li>
+        </ul>
+        </article>
+    </section>
+    </main>
+</body>
+</html>

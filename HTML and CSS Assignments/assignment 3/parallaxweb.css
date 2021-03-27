@@ -1,0 +1,99 @@
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+.parallaxone
+
+{
+    width:100%;
+    height:600px;
+    background-image: url(images/mus2.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+
+}
+
+.parallaxone  h2{
+    position: relative;
+    left: 500px;
+    top:300px;
+    width:400px;
+    height:50px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    
+}
+
+.parallaxtwo
+{
+    width:100%;
+    height:600px;
+    background-image: url(images/mus3.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+
+}
+
+.parallaxtwo  h2{
+    position: relative;
+    left: 500px;
+    top:300px;
+    width:300px;
+    height:50px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    
+}
+
+.para{
+    
+    padding: 50px;
+    text-align: center;
+    height: 150px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+
+}
+
+.parallaxthree
+{
+    width:100%;
+    height:600px;
+    background-image: url(images/mus1.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+
+}
+
+.parallaxthree h2{
+    position: relative;
+    left: 500px;
+    top:300px;
+    width:300px;
+    height:50px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    
+}
+
+
+
+
+
+
+
+
+

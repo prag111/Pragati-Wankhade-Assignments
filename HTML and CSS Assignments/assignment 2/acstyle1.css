@@ -1,0 +1,27 @@
+
+.first
+{
+    background: rgb(122, 153, 247);
+    height: 160px;
+    font-size:85px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.second{
+    background-color: hsl(204, 79%, 74%);
+    height: 130px;
+    font-size: 40px;
+}
+
+p{
+    height: 50px;
+    font-size: 40px;
+}
+
+.third
+{
+    background-color: hsl(204, 79%, 74%);
+    height:130px;
+    font-size: 40px;
+}

@@ -1,0 +1,31 @@
+.first
+{
+    height: 30px; 
+    background-color: rgb(195, 252, 233);
+    border: 10px solid black;
+    font-size: large;
+
+}
+
+.second
+{
+    height: 30px; 
+    background-color: rgb(195, 252, 233);
+    border: 5px solid black;
+    font-size: large;
+
+}
+.third
+{
+    height: 30px; 
+    background-color: rgb(195, 252, 233);
+    border: 1px solid black;
+    font-size: large;
+
+}
+.fourth
+{
+    height: 30px; 
+    background-color: rgb(195, 252, 233);
+
+}

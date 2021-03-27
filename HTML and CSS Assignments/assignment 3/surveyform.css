@@ -1,0 +1,67 @@
+
+@media screen and (max-width:600px)
+{
+body{
+
+    background-color: slategray;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    
+  
+}
+}
+@media screen and (max-width:600px)
+{
+header{
+    width: 1250px;
+    padding: 40px;
+    background-color:midnightblue;
+    text-align: center;
+    border-radius: 30px;
+    font-size: 30px;
+    margin-left: 5px;
+
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 1000;
+    text-decoration: underline;
+    color:white;
+}
+}
+
+
+
+
+#content div
+{
+    width:700px;
+    background-color:gray;
+    padding: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 350px;
+    margin-top: 10px;
+    border-radius: 30px;
+    color:white;
+    background-image: url(images/dna.jpg);
+
+
+ 
+}
+input{
+    border-radius: 10px;
+    padding: 10px;
+}
+
+textarea
+{
+    border-radius:10px;
+    padding: 10px; 
+}
+
+select{
+    border-radius: 10px;
+    padding: 10px;
+}
+ #content span{
+     text-align: center;
+margin-left: 300px;
+ }

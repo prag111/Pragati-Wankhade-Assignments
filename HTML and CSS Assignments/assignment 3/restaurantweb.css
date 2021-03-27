@@ -1,0 +1,166 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgb(145, 30, 30);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+a { text-decoration: none; }
+
+.header{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.heading{
+    width: 100%;
+    height: 6rem;
+    font-weight: bold;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    z-index: 2;    
+}
+.heading h1{
+    font-size: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    color: white;
+    background-color: rgb(170, 196, 27);
+    border-radius: 10px;
+    opacity: 0.9;
+    margin: 0 100px 0 100px;
+    padding: 10px 0 10px 0;
+}
+.center-div{
+    width: 100%;
+    height: auto;
+    font-weight: bold;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    z-index: 2;
+}
+.btns a {
+    border: 1px solid rgb(77, 201, 27);
+    background-color:  rgb(77, 201, 27);
+    border-radius: 10px;
+    margin: 0 25px;
+    padding: 12px 35px;
+    outline: none;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1;
+    text-align: center;
+    transition: .3s ease;
+}
+.btns a:hover {
+    color: rgb(0, 0, 0);
+    background: white;
+    font-weight: bold;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.tacos-section{
+    margin: 50px 30px 50px 30px;
+    color: white;
+    text-align: center;
+    font-family: 'Berkshire Swash', cursive;
+}
+div.div1 {
+    float: right;
+    height: 200px;
+    width: 500px;
+    margin-left: 30px;
+    background-color: rgb(251, 255, 0);
+}
+div.div2 {
+    clear: right;
+    float: right;
+    height: 215px;
+    width: 500px;
+    margin-top: 10px;
+    background-color: rgb(251, 255, 0);
+}    
+div.div3 {
+    height: 425px;
+    overflow: hidden;
+    background: url('images/vegtacos.jpg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: 0.3s ease;
+}
+
+.tacos-section h1{
+    font-size: 4.5rem;
+}
+
+.row{
+    margin: 0 30px 50px 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.column {
+    background-color: whitesmoke;
+    float: left;
+    width: 21%;
+    margin-left: 40px;
+    height: 200px;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.column h2{
+    font-size: 1.5rem;
+    margin: 0 0 10px 0;
+}
+
+.dessert{
+    margin: 50px 30px 50px 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+div.divd {
+    clear: right;
+    float: right;
+    height: 425px;
+    width: 73%;
+    background-color: whitesmoke;
+}    
+div.divimg {
+    height: 425px;
+    overflow: hidden;
+    background: url('images/dessert.jpeg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: 0.3s ease;
+}
+.dessert h1{
+    margin: 60px 60px 20px 60px;
+}
+.dessert span{
+    display: block;
+    margin: 0 60px 10px 60px;
+}
+.dessert a{
+    margin: 10px 60px 10px 60px;
+    font-size: 1rem;
+    padding: 8px 15px;
+    font-weight: 300;
+}
+.dessert a:hover{
+    font-weight: 300;
+}

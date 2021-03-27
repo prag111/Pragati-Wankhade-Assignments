@@ -1,0 +1,10 @@
+body{
+    background-color: rgb(195, 252, 233);
+}
+
+
+p{
+    word-spacing: 1px;
+    letter-spacing: 0.5px;
+    font-size: xx-large;
+}
