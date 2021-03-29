@@ -1,0 +1,358 @@
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/Assignments (master)
+$ cd Assignments
+bash: cd: Assignments: No such file or directory
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/Assignments (master)
+$ git branch js-assgn
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/Assignments (master)
+$ git branch
+  css-assi
+  css-assignments
+  js-assgn
+* master
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/Assignments (master)
+$ git checkout js-assgn
+Switched to branch 'js-assgn'
+M       README.txt
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/Assignments (js-assgn)
+$ git status
+On branch js-assgn
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        jfile1.js
+        jfile2.js
+        style1.css
+        style2.css
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/Assignments (js-assgn)
+$ git commit -m 'added js files'
+On branch js-assgn
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        jfile1.js
+        jfile2.js
+        style1.css
+        style2.css
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/Assignments (js-assgn)
+$ git status
+On branch js-assgn
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        jfile1.js
+        jfile2.js
+        style1.css
+        style2.css
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/Assignments (js-assgn)
+$ git add .
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/Assignments (js-assgn)
+$ git status
+On branch js-assgn
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   README.txt
+        new file:   jfile1.js
+        new file:   jfile2.js
+        new file:   style1.css
+        new file:   style2.css
+
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/Assignments (js-assgn)
+$ git commit -m 'changes applied'
+[js-assgn 23c9d08] changes applied
+ 5 files changed, 41 insertions(+), 1 deletion(-)
+ create mode 100644 jfile1.js
+ create mode 100644 jfile2.js
+ create mode 100644 style1.css
+ create mode 100644 style2.css
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/Assignments (js-assgn)
+$ git checkout master
+Switched to branch 'master'
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/Assignments (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/Assignments (master)
+$ git checkout js-assgn
+error: Your local changes to the following files would be overwritten by checkout:
+        README.txt
+Please commit your changes or stash them before you switch branches.
+Aborting
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/Assignments (master)
+$ git merge js-assgn
+error: Your local changes to the following files would be overwritten by merge:
+        README.txt
+Please commit your changes or stash them before you merge.
+Aborting
+Updating 8fba646..23c9d08
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/Assignments (master)
+$ git commit -m 'commited'
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/Assignments (master)
+$ git checkout js-assgn
+error: Your local changes to the following files would be overwritten by checkout:
+        README.txt
+Please commit your changes or stash them before you switch branches.
+Aborting
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/Assignments (master)
+$ git merge js-assgn
+error: Your local changes to the following files would be overwritten by merge:
+        README.txt
+Please commit your changes or stash them before you merge.
+Aborting
+Updating 8fba646..23c9d08
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/Assignments (master)
+$ git commit -m 'commited'
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/Assignments (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/Assignments (master)
+$ git merge js-assgn
+error: Your local changes to the following files would be overwritten by merge:
+        README.txt
+Please commit your changes or stash them before you merge.
+Aborting
+Updating 8fba646..23c9d08
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/Assignments (master)
+$ git add .
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/Assignments (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   README.txt
+
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/Assignments (master)
+$ git checkout js-assgn
+error: Your local changes to the following files would be overwritten by checkout:
+        README.txt
+Please commit your changes or stash them before you switch branches.
+Aborting
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/Assignments (master)
+$ git checkout -b js-assgn
+fatal: A branch named 'js-assgn' already exists.
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/Assignments (master)
+$ git checkout js-assgn
+error: Your local changes to the following files would be overwritten by checkout:
+        README.txt
+Please commit your changes or stash them before you switch branches.
+Aborting
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/Assignments (master)
+$ git add .
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/Assignments (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   README.txt
+
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/Assignments (master)
+$ git commit -m 'done'
+[master c6e475d] done
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/Assignments (master)
+$ git checkout js-assgn
+Switched to branch 'js-assgn'
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/Assignments (js-assgn)
+$ git status
+On branch js-assgn
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   jfile1.js
+        modified:   jfile2.js
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/Assignments (js-assgn)
+$ git add .
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/Assignments (js-assgn)
+$ git commit -m 'js file changed little'
+[js-assgn 789e0c8] js file changed little
+ 2 files changed, 3 insertions(+), 3 deletions(-)
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/Assignments (js-assgn)
+$ git checkout master
+Switched to branch 'master'
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/Assignments (master)
+$ git merge js-assgn
+Auto-merging README.txt
+CONFLICT (content): Merge conflict in README.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/Assignments (master|MERGING)
+$ git add .
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/Assignments (master|MERGING)
+$ git merge master
+fatal: You have not concluded your merge (MERGE_HEAD exists).
+Please, commit your changes before you merge.
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/Assignments (master|MERGING)
+$ git merge js-assgn
+fatal: You have not concluded your merge (MERGE_HEAD exists).
+Please, commit your changes before you merge.
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/Assignments (master|MERGING)
+$ git commit -m 'commiting changes'
+[master dbd436e] commiting changes
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/Assignments (master)
+$ git merge js-assgn
+Already up to date.
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/Assignments (master)
+$ git branch -d js-assgn
+Deleted branch js-assgn (was 789e0c8).
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/Assignments (master)
+$ git log --graph
+*   commit dbd436ee03ba336fa9d1a7c37aab895b3d3a9302 (HEAD -> master)
+|\  Merge: c6e475d 789e0c8
+| | Author: prag111 <pragati1399@gmail.com>
+| | Date:   Sat Mar 13 16:22:49 2021 -0800
+| |
+| |     commiting changes
+| |
+| * commit 789e0c82dc6a02553768e334e74aaa4a4bbe0543
+| | Author: prag111 <pragati1399@gmail.com>
+| | Date:   Sat Mar 13 16:21:26 2021 -0800
+| |
+| |     js file changed little
+| |
+| * commit 23c9d08879edcd23342c648969ae147f33e149da
+| | Author: prag111 <pragati1399@gmail.com>
+| | Date:   Sat Mar 13 16:13:04 2021 -0800
+| |
+| |     changes applied
+| |
+* | commit c6e475d9743435d0698703ae98fc458569629cd5
+|/  Author: prag111 <pragati1399@gmail.com>
+|   Date:   Sat Mar 13 16:18:26 2021 -0800
+|
+:...skipping...
+*   commit dbd436ee03ba336fa9d1a7c37aab895b3d3a9302 (HEAD -> master)
+|\  Merge: c6e475d 789e0c8
+| | Author: prag111 <pragati1399@gmail.com>
+| | Date:   Sat Mar 13 16:22:49 2021 -0800
+| |
+| |     commiting changes
+| |
+| * commit 789e0c82dc6a02553768e334e74aaa4a4bbe0543
+| | Author: prag111 <pragati1399@gmail.com>
+| | Date:   Sat Mar 13 16:21:26 2021 -0800
+| |
+| |     js file changed little
+| |
+| * commit 23c9d08879edcd23342c648969ae147f33e149da
+| | Author: prag111 <pragati1399@gmail.com>
+| | Date:   Sat Mar 13 16:13:04 2021 -0800
+| |
+| |     changes applied
+| |
+* | commit c6e475d9743435d0698703ae98fc458569629cd5
+|/  Author: prag111 <pragati1399@gmail.com>
+|   Date:   Sat Mar 13 16:18:26 2021 -0800
+|
+|       done
+|
+* commit 8fba646fdcf758ac3079cf5c200623539f70664c
+| Author: prag111 <pragati1399@gmail.com>
+| Date:   Sat Mar 13 15:37:55 2021 -0800
+|
+|     commited
+|
+* commit a57335ec23335da793dff367204817ec9592af23 (css-assignments)
+  Author: prag111 <pragati1399@gmail.com>
+  Date:   Sat Mar 13 15:15:25 2021 -0800
+
+      changes applied on some files
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/Assignments (master)
+$

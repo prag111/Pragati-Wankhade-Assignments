@@ -1,0 +1,228 @@
+sr@DESKTOP-LPSCRSD MINGW64 ~
+$ mkdir project_dir
+
+sr@DESKTOP-LPSCRSD MINGW64 ~gigitgtogi
+sr@DESKTOP-LPSCRSD MINGW64 ~/project_dir
+$ git init
+Initialized empty Git repository in C:/Users/sr/project_dir/.git/
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/project_dir (master)
+$ touch index.html
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/project_dir (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/project_dir (master)
+$ git add .
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/project_dir (master)
+$ git config --global user.username 'prag111'
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/project_dir (master)
+$ git config --global user.email 'pragati1399@gmail.com'
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/project_dir (master)
+$ git commit -m 'added index.html file'
+[master (root-commit) 593d04b] added index.html file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 index.html
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/project_dir (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/project_dir (master)
+$ touch info.txt
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/project_dir (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        info.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/project_dir (master)
+$ touch .gitignore
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/project_dir (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+        info.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/project_dir (master)
+$ git commit -m 'added html file'
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+        info.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/project_dir (master)
+$ git log
+commit 593d04b4d24115723d5507e06331241e0270c476 (HEAD -> master)
+Author: prag111 <pragati1399@gmail.com>
+Date:   Sat Mar 13 12:53:53 2021 -0800
+
+    added index.html file
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/project_dir (master)
+$ git revert
+usage: git revert [<options>] <commit-ish>...
+   or: git revert <subcommand>
+
+    --quit                end revert or cherry-pick sequence
+    --continue            resume revert or cherry-pick sequence
+    --abort               cancel revert or cherry-pick sequence
+    --skip                skip current commit and continue
+    --cleanup <mode>      how to strip spaces and #comments from message
+    -n, --no-commit       don't automatically commit
+    -e, --edit            edit the commit message
+    -s, --signoff         add a Signed-off-by trailer
+    -m, --mainline <parent-number>
+                          select mainline parent
+    --rerere-autoupdate   update the index with reused conflict resolution if possible
+    --strategy <strategy>
+                          merge strategy
+    -X, --strategy-option <option>
+                          option for merge strategy
+    -S, --gpg-sign[=<key-id>]
+                          GPG sign commit
+
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/project_dir (master)
+$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/project_dir (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+        info.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/project_dir (master)
+$ git revert
+usage: git revert [<options>] <commit-ish>...
+   or: git revert <subcommand>
+
+    --quit                end revert or cherry-pick sequence
+    --continue            resume revert or cherry-pick sequence
+    --abort               cancel revert or cherry-pick sequence
+    --skip                skip current commit and continue
+    --cleanup <mode>      how to strip spaces and #comments from message
+    -n, --no-commit       don't automatically commit
+    -e, --edit            edit the commit message
+    -s, --signoff         add a Signed-off-by trailer
+    -m, --mainline <parent-number>
+                          select mainline parent
+    --rerere-autoupdate   update the index with reused conflict resolution if possible
+    --strategy <strategy>
+                          merge strategy
+    -X, --strategy-option <option>
+                          option for merge strategy
+    -S, --gpg-sign[=<key-id>]
+                          GPG sign commit
+
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/project_dir (master)
+$ git mv add my-add
+fatal: bad source, source=add, destination=my-add
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/project_dir (master)
+$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/project_dir (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+        info.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/project_dir (master)
+$ git revert
+usage: git revert [<options>] <commit-ish>...
+   or: git revert <subcommand>
+
+    --quit                end revert or cherry-pick sequence
+    --continue            resume revert or cherry-pick sequence
+    --abort               cancel revert or cherry-pick sequence
+    --skip                skip current commit and continue
+    --cleanup <mode>      how to strip spaces and #comments from message
+    -n, --no-commit       don't automatically commit
+    -e, --edit            edit the commit message
+    -s, --signoff         add a Signed-off-by trailer
+    -m, --mainline <parent-number>
+                          select mainline parent
+    --rerere-autoupdate   update the index with reused conflict resolution if possible
+    --strategy <strategy>
+                          merge strategy
+    -X, --strategy-option <option>
+                          option for merge strategy
+    -S, --gpg-sign[=<key-id>]
+                          GPG sign commit
+
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/project_dir (master)
+$

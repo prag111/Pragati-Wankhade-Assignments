@@ -1,0 +1,49 @@
+
+sr@DESKTOP-LPSCRSD MINGW64 ~ (master)
+$ pwd
+/c/Users/sr
+
+sr@DESKTOP-LPSCRSD MINGW64 ~ (master)
+$ cd Assignments
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/Assignments (master)
+$ ls
+README.txt  file2.html  file4.html  jfile2.js   style2.css
+file1.html  file3.html  jfile1.js   style1.css
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/Assignments (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/sr/Assignments/.git/
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/Assignments (master)
+$ git add .
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/Assignments (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/Assignments (master)
+$ git commit -m 'firts commit'
+On branch master
+nothing to commit, working tree clean
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/Assignments (master)
+$ git remote add origin https://github.com/prag111/freshersbatch-oct16.git
+error: remote origin already exists.
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/Assignments (master)
+$ git push -u origin master
+Enumerating objects: 27, done.
+Counting objects: 100% (27/27), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (24/24), done.
+Writing objects: 100% (27/27), 2.62 KiB | 223.00 KiB/s, done.
+Total 27 (delta 8), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (8/8), done.
+To https://github.com/prag111/freshersbatch-oct16.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/Assignments (master)
+$

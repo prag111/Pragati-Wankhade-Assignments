@@ -1,0 +1,216 @@
+
+sr@DESKTOP-LPSCRSD MINGW64 ~ (master)
+$ mkdir Assignments
+
+sr@DESKTOP-LPSCRSD MINGW64 ~ (master)
+$ cd Assignments
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/Assignments (master)
+$ git init
+Initialized empty Git repository in C:/Users/sr/Assignments/.git/
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/Assignments (master)
+$ touch README.txt
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/Assignments (master)
+$ git branch -b html-assignments
+error: unknown switch `b'
+usage: git branch [<options>] [-r | -a] [--merged] [--no-merged]
+   or: git branch [<options>] [-l] [-f] <branch-name> [<start-point>]
+   or: git branch [<options>] [-r] (-d | -D) <branch-name>...
+   or: git branch [<options>] (-m | -M) [<old-branch>] <new-branch>
+   or: git branch [<options>] (-c | -C) [<old-branch>] <new-branch>
+   or: git branch [<options>] [-r | -a] [--points-at]
+   or: git branch [<options>] [-r | -a] [--format]
+
+Generic options
+    -v, --verbose         show hash and subject, give twice for upstream branch
+    -q, --quiet           suppress informational messages
+    -t, --track           set up tracking mode (see git-pull(1))
+    -u, --set-upstream-to <upstream>
+                          change the upstream info
+    --unset-upstream      unset the upstream info
+    --color[=<when>]      use colored output
+    -r, --remotes         act on remote-tracking branches
+    --contains <commit>   print only branches that contain the commit
+    --no-contains <commit>
+                          print only branches that don't contain the commit
+    --abbrev[=<n>]        use <n> digits to display object names
+
+Specific git-branch actions:
+    -a, --all             list both remote-tracking and local branches
+    -d, --delete          delete fully merged branch
+    -D                    delete branch (even if not merged)
+    -m, --move            move/rename a branch and its reflog
+    -M                    move/rename a branch, even if target exists
+    -c, --copy            copy a branch and its reflog
+    -C                    copy a branch, even if target existsmk
+
+    -f, --force           force creation, move/rename, deletion
+    --merged <commit>     print only branches that are merged
+    --no-merged <commit>  print only branches that are not merged
+    --column[=<style>]    list branches in columns
+    --sort <key>          field name to sort on
+    --points-at <object>  print only branches of the object
+    -i, --ignore-case     sorting and filtering are case insensitive
+    --format <format>     format to use for the output
+
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/Assignments (master)
+$ git checkout html-assignments
+error: pathspec 'html-assignments' did not match any file(s) known to git
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/Assignments (master)
+$ git config --global user.username 'prag111'
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/Assignments (master)
+$ git config --global user.email 'pragati1399@gmail.com'
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/Assignments (master)
+$ git checkout -b html-assignments
+Switched to a new branch 'html-assignments'
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/Assignments (html-assignments)
+$ git status
+On branch html-assignments
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        README.txt
+        file1.html
+        file2.html
+        file3.html
+        file4.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/Assignments (html-assignments)
+$ git commit -m 'all html files copied to new branch'
+On branch html-assignments
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        README.txt
+        file1.html
+        file2.html
+        file3.html
+        file4.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/Assignments (html-assignments)
+$ git status
+On branch html-assignments
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        README.txt
+        file1.html
+        file2.html
+        file3.html
+        file4.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/Assignments (html-assignments)
+$ git add .
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/Assignments (html-assignments)
+$ git status
+On branch html-assignments
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   README.txt
+        new file:   file1.html
+        new file:   file2.html
+        new file:   file3.html
+        new file:   file4.html
+
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/Assignments (html-assignments)
+$ git commit -m 'changes applied on some files'
+[html-assignments (root-commit) a57335e] changes applied on some files
+ 5 files changed, 39 insertions(+)
+ create mode 100644 README.txt
+ create mode 100644 file1.html
+ create mode 100644 file2.html
+ create mode 100644 file3.html
+ create mode 100644 file4.html
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/Assignments (html-assignments)
+$ git checkout -b master
+Switched to a new branch 'master'
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/Assignments (master)
+$ git commit -m 'changes made to README.txt file'
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/Assignments (master)
+$ git checkout -b html-assignments
+fatal: A branch named 'html-assignments' already exists.
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/Assignments (master)
+$ git checkout -b master
+fatal: A branch named 'master' already exists.
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/Assignments (master)
+$ git checkout -b html-assignments
+fatal: A branch named 'html-assignments' already exists.
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/Assignments (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/Assignments (master)
+$ git checkout -b  html-assignments
+fatal: A branch named 'html-assignments' already exists.
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/Assignments (master)
+$ git commit -m 'commited'
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/Assignments (master)
+$ git merge html-assignments
+Already up to date.
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/Assignments (master)
+$ git log --graph
+* commit a57335ec23335da793dff367204817ec9592af23 (HEAD -> master, html-assignments)
+  Author: prag111 <pragati1399@gmail.com>
+  Date:   Sat Mar 13 15:15:25 2021 -0800
+
+      changes applied on some files
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/Assignments (master)
+$ git branch -d html-assignments
+Deleted branch html-assignments (was a57335e).
+
+sr@DESKTOP-LPSCRSD MINGW64 ~/Assignments (master)
+$
